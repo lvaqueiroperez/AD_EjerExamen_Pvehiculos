@@ -1,10 +1,13 @@
 package pvehiculos;
 
 import java.io.Serializable;
+import javax.persistence.*;
 
+@Entity
 public class Clientes implements Serializable {
 
     private static final long serialVersionUID = 1L;
+    @Id
     String dni;
     String nomec;
     int ncompras;

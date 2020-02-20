@@ -1,13 +1,13 @@
 package pvehiculos;
 
 import java.io.Serializable;
-import javax.swing.text.html.parser.Entity;
-//importación sin usar, se ha borrado
-//los @ también borrados ?
+import javax.persistence.*;
+
+@Entity
 public class Vehiculos implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
+    @Id
     String codveh;
     String nomveh;
     int prezoorixe;
