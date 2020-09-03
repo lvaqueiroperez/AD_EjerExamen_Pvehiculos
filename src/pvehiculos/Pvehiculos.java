@@ -92,7 +92,7 @@ public class Pvehiculos {
 
             //NOMEC EN CLIENTES
             em.getTransaction().begin();
-
+            //ESTAMOS SELECCIONANDO UN OBJETO, DE AHÍ LA "p"
             TypedQuery<Clientes> query
                     = em.createQuery("select p from Clientes p where p.dni = :value ", Clientes.class);
 
